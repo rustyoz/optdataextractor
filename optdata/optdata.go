@@ -10,7 +10,7 @@ import (
 
 func ExtractOpdataLogs(basedirectory string, outputpath string) ([]string, error) {
 
-	archiveFP := filepath.Join(basedirectory, "optdata/fileutil/data/archive")
+	archiveFP := filepath.Join(basedirectory, ".")
 
 	fileinfo, err := ioutil.ReadDir(archiveFP)
 	if err != nil {

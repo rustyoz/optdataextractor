@@ -11,8 +11,8 @@ import (
 
 func main() {
 
-	optdatapath := flag.String("d", "test", "location of optdata folder")
-	outputpath := flag.String("o", "archive", "output folder")
+	optdatapath := flag.String("d", ".", "location of optdata folder")
+	outputpath := flag.String("o", ".", "output folder")
 
 	if filepath.IsAbs(*outputpath) == false {
 		wd, _ := os.Getwd()

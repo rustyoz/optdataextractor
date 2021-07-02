@@ -42,17 +42,17 @@ func ExtractOpdataLogs(basedirectory string, outputpath string) ([]string, error
 		}
 	}
 
-	fmt.Println(targzfiles)
+	//fmt.Println(targzfiles)
 
-	fmt.Println(outputpath)
+	//fmt.Println(outputpath)
 	err = os.Chdir(outputpath)
 	if err != nil {
 		log.Fatalln(err)
 	}
 
-	wd, _ := os.Getwd()
-	fmt.Println(wd)
-	fmt.Println("here")
+	//wd, _ := os.Getwd()
+	//fmt.Println(wd)
+	//fmt.Println("here")
 
 	for _, targzfile := range targzfiles {
 
